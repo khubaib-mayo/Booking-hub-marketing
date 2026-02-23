@@ -123,7 +123,7 @@ export function PricingComparison() {
         <AnimateOnScroll delay={0.2}>
           <div className="mt-16 overflow-x-auto -mx-4 px-4">
             <div className="min-w-[640px]">
-              <div className="grid grid-cols-[1fr_120px_120px_120px] sm:grid-cols-[1fr_140px_140px_140px] gap-0 border-b-2 border-zinc-200 pb-4 mb-0 sticky top-16 bg-zinc-50/95 backdrop-blur-sm z-10">
+              <div className="grid grid-cols-[1fr_120px_120px_120px] sm:grid-cols-[1fr_140px_140px_140px] gap-0 border-b-2 border-zinc-200 pb-4 sticky top-16 bg-zinc-50/95 backdrop-blur-sm z-10 mt-[10px] mb-[10px]">
                 <div />
                 <div className="text-center">
                   <p className="text-sm font-semibold text-zinc-900">Solo</p>
