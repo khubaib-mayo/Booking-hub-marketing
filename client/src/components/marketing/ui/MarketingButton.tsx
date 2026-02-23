@@ -34,8 +34,7 @@ export const MarketingButton = forwardRef<HTMLButtonElement, MarketingButtonProp
         <a
           href={href}
           className={cn(baseStyles, variants[variant], sizes[size], className)}
-          data-testid={`link-${variant}-${size}`}
-        >
+          >
           {children}
         </a>
       );
@@ -45,7 +44,6 @@ export const MarketingButton = forwardRef<HTMLButtonElement, MarketingButtonProp
       <button
         ref={ref}
         className={cn(baseStyles, variants[variant], sizes[size], className)}
-        data-testid={`button-${variant}-${size}`}
         {...props}
       >
         {children}
