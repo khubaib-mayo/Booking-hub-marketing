@@ -4,6 +4,10 @@ import { SectionBadge } from "@/components/marketing/ui/SectionBadge";
 import { MockupFrame } from "@/components/marketing/ui/MockupFrame";
 import { AnimateOnScroll } from "@/components/marketing/shared/AnimateOnScroll";
 import { CalendarCheck, Users, FileText, TrendingUp, CheckCircle } from "lucide-react";
+import { BookingsMockup } from "@/components/mockups/BookingsMockup";
+import { CommissionsMockup } from "@/components/mockups/CommissionsMockup";
+import { InvoiceMockup } from "@/components/mockups/InvoiceMockup";
+import { FinancialMockup } from "@/components/mockups/FinancialMockup";
 
 const features = [
   {
@@ -18,7 +22,7 @@ const features = [
     ],
     icon: CalendarCheck,
     mockupUrl: "app.bookinghub.com/bookings",
-    imageSrc: "/images/mockups/bookings-mockup.png",
+    mockup: BookingsMockup,
   },
   {
     badge: "Commissions",
@@ -32,7 +36,7 @@ const features = [
     ],
     icon: Users,
     mockupUrl: "app.bookinghub.com/commissions",
-    imageSrc: "/images/mockups/bookings-mockup.png",
+    mockup: CommissionsMockup,
   },
   {
     badge: "Invoicing",
@@ -46,7 +50,7 @@ const features = [
     ],
     icon: FileText,
     mockupUrl: "app.bookinghub.com/invoices",
-    imageSrc: "/images/mockups/invoice-mockup.png",
+    mockup: InvoiceMockup,
   },
   {
     badge: "Analytics",
@@ -60,7 +64,7 @@ const features = [
     ],
     icon: TrendingUp,
     mockupUrl: "app.bookinghub.com/analytics",
-    imageSrc: "/images/mockups/financial-mockup.png",
+    mockup: FinancialMockup,
   },
 ];
 
@@ -79,6 +83,7 @@ export function FeatureShowcase() {
         <div className="mt-20 space-y-24 lg:space-y-32">
           {features.map((feature, i) => {
             const isReversed = i % 2 === 1;
+            const MockupComponent = feature.mockup;
             return (
               <div
                 key={feature.title}
@@ -105,21 +110,7 @@ export function FeatureShowcase() {
 
                 <AnimateOnScroll className="flex-1" direction={isReversed ? "left" : "right"}>
                   <MockupFrame url={feature.mockupUrl}>
-                    <img
-                      src={feature.imageSrc}
-                      alt={feature.title}
-                      className="w-full h-auto"
-                      loading="lazy"
-                      onError={(e) => {
-                        const target = e.currentTarget;
-                        target.style.display = "none";
-                        const fallback = target.nextElementSibling as HTMLElement;
-                        if (fallback) fallback.style.display = "flex";
-                      }}
-                    />
-                    <div className="aspect-[16/10] bg-gradient-to-br from-zinc-50 to-zinc-100 items-center justify-center" style={{ display: "none" }}>
-                      <feature.icon className="w-16 h-16 text-zinc-200" />
-                    </div>
+                    <MockupComponent />
                   </MockupFrame>
                 </AnimateOnScroll>
               </div>
