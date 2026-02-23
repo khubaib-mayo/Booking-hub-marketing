@@ -1,119 +1,131 @@
-import { Container } from "@/components/marketing/ui/Container";
-import { SectionHeader } from "@/components/marketing/ui/SectionHeader";
+import { FeaturesHero } from "@/components/features/FeaturesHero";
+import { FeatureGrid } from "@/components/features/FeatureGrid";
+import { FeatureDeepDive } from "@/components/features/FeatureDeepDive";
+import { IntegrationPreview } from "@/components/features/IntegrationPreview";
 import { CTABanner } from "@/components/marketing/shared/CTABanner";
-import {
-  Calendar,
-  BarChart3,
-  FileText,
-  Users,
-  Star,
-  Zap,
-  Globe,
-  Shield,
-  Smartphone,
-  CreditCard,
-  Bell,
-  PieChart,
-} from "lucide-react";
-
-const featureCategories = [
-  {
-    badge: "Booking Management",
-    title: "Accept bookings around the clock",
-    description: "A powerful booking engine that works while you sleep. Real-time availability, instant confirmations, and automated reminders.",
-    features: [
-      { icon: Calendar, title: "Real-Time Availability", description: "Sync availability across all channels instantly. No more double bookings." },
-      { icon: Globe, title: "Multi-Channel Distribution", description: "Sell on your website, OTAs, and partner sites from one dashboard." },
-      { icon: Smartphone, title: "Mobile-First Design", description: "Your customers can book from any device with our responsive booking widget." },
-      { icon: Bell, title: "Smart Notifications", description: "Automated email and SMS confirmations, reminders, and follow-ups." },
-    ],
-  },
-  {
-    badge: "Financial Tools",
-    title: "Track every dollar, effortlessly",
-    description: "From commission calculations to invoice generation, keep your finances organized and transparent.",
-    features: [
-      { icon: BarChart3, title: "Commission Tracking", description: "Automatically calculate agent commissions and partner payouts with custom rates." },
-      { icon: FileText, title: "Invoice Generation", description: "Create branded invoices in seconds. Schedule recurring billing automatically." },
-      { icon: CreditCard, title: "Payment Processing", description: "Accept payments online with integrated processing. Support for multiple currencies." },
-      { icon: PieChart, title: "Financial Reports", description: "Revenue breakdowns, profit margins, and seasonal trends at your fingertips." },
-    ],
-  },
-  {
-    badge: "Growth Tools",
-    title: "Grow your business smarter",
-    description: "Built-in tools to help you attract more customers, collect reviews, and understand your business performance.",
-    features: [
-      { icon: Users, title: "Customer CRM", description: "Build detailed guest profiles. Track preferences, history, and lifetime value." },
-      { icon: Star, title: "Review Collection", description: "Automated post-trip review requests for TripAdvisor, Google, and more." },
-      { icon: Zap, title: "Analytics Dashboard", description: "Real-time insights into bookings, revenue, and customer behavior." },
-      { icon: Shield, title: "Data Security", description: "Enterprise-grade security with GDPR compliance and encrypted data storage." },
-    ],
-  },
-];
+import { CalendarCheck, Users, FileText, TrendingUp } from "lucide-react";
+import { BookingsMockup } from "@/components/mockups/BookingsMockup";
+import { CommissionsMockup } from "@/components/mockups/CommissionsMockup";
+import { InvoiceMockup } from "@/components/mockups/InvoiceMockup";
+import { FinancialMockup } from "@/components/mockups/FinancialMockup";
 
 export default function Features() {
   return (
-    <div>
-      <section className="relative overflow-hidden pt-16 pb-24 sm:pt-24 sm:pb-32">
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-50/40 via-white to-white" />
-        </div>
-        <Container>
-          <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center rounded-full bg-brand-50 px-3.5 py-1 text-xs font-semibold text-brand-600 ring-1 ring-inset ring-brand-500/10 mb-6" data-testid="badge-features-page">
-              Features
-            </span>
-            <h1
-              className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900"
-              style={{ textWrap: "balance" } as React.CSSProperties}
-              data-testid="text-features-title"
-            >
-              Powerful tools for modern tour operators
-            </h1>
-            <p className="mt-6 text-lg sm:text-xl text-zinc-500 max-w-2xl mx-auto leading-relaxed">
-              Everything you need to manage, grow, and scale your tourism business — in one beautiful platform.
-            </p>
-          </div>
-        </Container>
-      </section>
+    <>
+      <FeaturesHero />
 
-      {featureCategories.map((category, categoryIndex) => (
-        <section
-          key={category.badge}
-          className={`py-24 lg:py-32 ${categoryIndex % 2 === 1 ? "bg-zinc-50/50" : ""}`}
-          data-testid={`section-feature-category-${categoryIndex}`}
-        >
-          <Container>
-            <SectionHeader
-              badge={category.badge}
-              title={category.title}
-              description={category.description}
-            />
-            <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {category.features.map((feature) => (
-                <div
-                  key={feature.title}
-                  className="group rounded-2xl border border-zinc-100 bg-white p-6 transition-all duration-300 hover:border-zinc-200 hover:shadow-lg hover:shadow-zinc-900/5"
-                  data-testid={`card-feature-${feature.title.toLowerCase().replace(/\s+/g, '-')}`}
-                >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-50 text-brand-600 transition-colors duration-300 group-hover:bg-brand-500 group-hover:text-white">
-                    <feature.icon className="h-5 w-5" />
-                  </div>
-                  <h3 className="mt-4 font-display text-base font-semibold text-zinc-900">
-                    {feature.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-zinc-500 leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </Container>
-        </section>
-      ))}
+      <FeatureGrid />
 
-      <CTABanner />
-    </div>
+      <FeatureDeepDive
+        badge="Booking Management"
+        title="Every booking, one place, total control"
+        description="Stop chasing bookings across WhatsApp, email, and spreadsheets. BookingHub gives you a single source of truth with powerful search, filters, and bulk actions."
+        bullets={[
+          "Create bookings with an intuitive multi-step form",
+          "Track status: Upcoming, Completed, Cancelled",
+          "Monitor payments: Unpaid, Deposit Paid, Fully Paid",
+          "Bulk update statuses or export to CSV/PDF",
+          "Assign bookings to agents automatically",
+        ]}
+        details={[
+          { title: "Smart Search", description: "Search by customer name, booking reference, trip type, or date range. Find any booking in seconds." },
+          { title: "Tabbed Views", description: "Switch between All, Upcoming, Completed, and Cancelled bookings with one click." },
+          { title: "Bulk Actions", description: "Select multiple bookings and update their status, export them, or send reminders in bulk." },
+          { title: "Guest Details", description: "Track adults, children, and special requirements per booking with automatic pricing." },
+          { title: "Deposit Tracking", description: "Record partial payments and track remaining balances. See at a glance what's still owed." },
+          { title: "Mobile Friendly", description: "Create and manage bookings from any device. The responsive design works on phones and tablets." },
+        ]}
+        mockupUrl="app.bookinghub.com/bookings"
+        mockupContent={<BookingsMockup />}
+        imageAlt="BookingHub Booking Management"
+        icon={CalendarCheck}
+      />
+
+      <FeatureDeepDive
+        badge="Commission Tracking"
+        title="Pay your agents right, without the spreadsheet"
+        description="Commissions are the #1 pain point for tour operators with teams. BookingHub automates the entire process — from calculation to payout."
+        bullets={[
+          "Auto-calculated when bookings are created",
+          "Configurable commission percentage per agent or globally",
+          "Track Pending, Paid, and Cancelled commissions",
+          "Bulk mark-as-paid for payroll runs",
+          "Full per-agent earnings reports and exports",
+        ]}
+        details={[
+          { title: "Automatic Calculation", description: "Set your commission rate once. Every new booking automatically generates the correct commission entry." },
+          { title: "Bulk Payouts", description: "Select all pending commissions and mark them as paid in one action. Perfect for weekly or monthly payroll." },
+          { title: "Agent Dashboard", description: "Each agent sees their own earnings, pending amounts, and payment history. Full transparency." },
+          { title: "Payout History", description: "Complete audit trail of every commission paid — when, how much, and for which booking." },
+          { title: "Performance Insights", description: "See which agents bring the most revenue, highest booking counts, and best conversion rates." },
+          { title: "Export Reports", description: "Download commission reports as CSV or PDF for your accountant or payroll system." },
+        ]}
+        mockupUrl="app.bookinghub.com/commissions"
+        mockupContent={<CommissionsMockup />}
+        imageAlt="BookingHub Commission Tracking"
+        icon={Users}
+        reversed
+        bgClass="bg-zinc-50/50"
+      />
+
+      <FeatureDeepDive
+        badge="Invoicing"
+        title="Professional invoices without the copy-paste"
+        description="Stop creating invoices one by one in Word. BookingHub generates beautiful, professional PDF invoices from your booking data — and emails them to customers directly."
+        bullets={[
+          "One-click invoice generation from any booking",
+          "Automatic line items, tax calculations, and totals",
+          "Your company logo, name, and branding on every invoice",
+          "Email invoices directly to customers",
+          "Track payment status: Draft, Sent, Paid, Overdue",
+        ]}
+        details={[
+          { title: "PDF Generation", description: "Clean, professional invoices generated as PDF. Download or email them instantly." },
+          { title: "Auto-Fill from Bookings", description: "Customer details, trip info, pricing, and tax all pull from the booking. Zero manual entry." },
+          { title: "Tax Configuration", description: "Set your tax rate in settings. BookingHub calculates tax automatically on every invoice." },
+          { title: "Email Delivery", description: "Send invoices directly from the platform. Track whether they've been sent and when." },
+          { title: "Payment Tracking", description: "Mark invoices as paid when payment arrives. See outstanding amounts at a glance." },
+          { title: "Invoice History", description: "Full list of all invoices with search, filter by status, and quick actions." },
+        ]}
+        mockupUrl="app.bookinghub.com/invoices"
+        mockupContent={<InvoiceMockup />}
+        imageAlt="BookingHub Invoice Generation"
+        icon={FileText}
+      />
+
+      <FeatureDeepDive
+        badge="Financial Analytics"
+        title="See your money. Know your business."
+        description="Real-time dashboards that show exactly where your business stands — revenue, cash flow, what's overdue, and what's coming in. No more guessing."
+        bullets={[
+          "Revenue trends with monthly and quarterly views",
+          "Cash flow projections for the next 30 days",
+          "Payment status breakdown (Paid, Deposit, Unpaid)",
+          "Overdue payment alerts with bulk reminder emails",
+          "Tour-by-tour performance rankings with AI insights",
+        ]}
+        details={[
+          { title: "Revenue Dashboard", description: "Total revenue, collected, pending, and net (after commissions). Updated in real time." },
+          { title: "Cash Flow Forecast", description: "See expected incoming and outgoing for the next 30 days. Plan ahead with confidence." },
+          { title: "Overdue Alerts", description: "Automatically flags overdue payments. Send bulk reminders to customers with one click." },
+          { title: "Tour Performance", description: "Compare tours by revenue, booking count, and completion rate. Find your winners." },
+          { title: "AI Smart Insights", description: "AI analyzes your data and surfaces actionable recommendations — like which tours to promote." },
+          { title: "Export Everything", description: "Download financial reports as PDF or CSV. Ready for your accountant or tax filing." },
+        ]}
+        mockupUrl="app.bookinghub.com/analytics"
+        mockupContent={<FinancialMockup />}
+        imageAlt="BookingHub Financial Analytics"
+        icon={TrendingUp}
+        reversed
+        bgClass="bg-zinc-50/50"
+      />
+
+      <IntegrationPreview />
+
+      <CTABanner
+        title="See it all in action"
+        description="Start your 14-day free trial and explore every feature. No credit card required. Set up in minutes."
+      />
+    </>
   );
 }
