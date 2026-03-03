@@ -1,0 +1,32 @@
+20:41:00.639 Running build in Washington, D.C., USA (East) – iad1
+20:41:00.640 Build machine configuration: 2 cores, 8 GB
+20:41:02.310 Cloning github.com/khubaib-mayo/Booking-hub-marketing (Branch: main, Commit: b6e1ed1)
+20:41:02.311 Previous build caches not available.
+20:41:02.985 Cloning completed: 675.000ms
+20:41:04.518 Running "vercel build"
+20:41:05.760 Running "install" command: `npm install`...
+20:41:15.022 
+20:41:15.023 added 476 packages, and audited 477 packages in 9s
+20:41:15.024 
+20:41:15.024 76 packages are looking for funding
+20:41:15.024   run `npm fund` for details
+20:41:15.033 
+20:41:15.034 4 vulnerabilities (1 low, 1 moderate, 2 high)
+20:41:15.034 
+20:41:15.034 To address all issues, run:
+20:41:15.034   npm audit fix
+20:41:15.034 
+20:41:15.034 Run `npm audit` for details.
+20:41:15.749 [36mvite v7.3.0 [32mbuilding client environment for production...[36m[39m
+20:41:15.807 transforming...
+20:41:17.454 
+20:41:17.455 A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+20:41:19.454 [32m✓[39m 2043 modules transformed.
+20:41:19.827 rendering chunks...
+20:41:19.839 computing gzip size...
+20:41:19.858 [2mdist/public/[22m[32mindex.html                 [39m[1m[2m  0.97 kB[22m[1m[22m[2m │ gzip:   0.53 kB[22m
+20:41:19.858 [2mdist/public/[22m[2massets/[22m[35mindex-DpB_Tsoh.css  [39m[1m[2m 90.51 kB[22m[1m[22m[2m │ gzip:  14.45 kB[22m
+20:41:19.858 [2mdist/public/[22m[2massets/[22m[36mindex-moV3Sufz.js   [39m[1m[2m496.87 kB[22m[1m[22m[2m │ gzip: 150.83 kB[22m
+20:41:19.859 [32m✓ built in 4.08s[39m
+20:41:19.931 Error: No Output Directory named "public" found after the Build completed. Configure the Output Directory in your Project Settings. Alternatively, configure vercel.json#outputDirectory.
+20:41:19.932 Learn More: https://vercel.link/missing-public-directory
