@@ -31,8 +31,8 @@ export function HowItWorks() {
         <AnimateOnScroll>
           <SectionHeader
             badge="How It Works"
-            title="From signup to insights in three steps"
-            description="Tournetix gets you up and running fast — not in weeks, in minutes."
+            title="Live in minutes, not weeks"
+            description="Most operators are fully set up before their first coffee gets cold."
           />
         </AnimateOnScroll>
 

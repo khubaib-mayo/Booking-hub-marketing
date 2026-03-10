@@ -30,10 +30,10 @@ export function FeaturesHero() {
               style={{ textWrap: "balance" } as React.CSSProperties}
               data-testid="text-features-title"
             >
-              Everything you need to run your tour business
+              The complete toolkit for tour operators
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-zinc-500 leading-relaxed max-w-2xl mx-auto">
-              One platform replaces your spreadsheets, calculators, invoice templates, and email chains. Here's what's inside.
+              Every feature built for how tour operators actually work — from first booking to end-of-month reports.
             </p>
           </div>
         </AnimateOnScroll>

@@ -75,8 +75,8 @@ export function FeatureShowcase() {
         <AnimateOnScroll>
           <SectionHeader
             badge="Features"
-            title="Everything you need, nothing you don't"
-            description="Tournetix replaces your spreadsheets, calculators, invoice templates, and email chains with one intelligent platform."
+            title="One platform. Every workflow."
+            description="Tournetix replaces the 5 tools you're juggling with one platform that handles bookings, commissions, invoices, analytics, and team management."
           />
         </AnimateOnScroll>
 

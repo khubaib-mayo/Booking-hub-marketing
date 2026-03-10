@@ -57,7 +57,7 @@ export function OurStory() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-zinc-900">The Tournetix Team</p>
-                  <p className="text-xs text-zinc-400">Founded 2025 · Building from Portugal</p>
+                  <p className="text-xs text-zinc-400">Founded 2025 · The operating system for tour operators</p>
                 </div>
               </div>
             </div>

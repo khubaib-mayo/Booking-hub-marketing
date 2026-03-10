@@ -21,10 +21,7 @@ export default function Home() {
       <Testimonials />
       <PricingPreview />
       <FAQ />
-      <CTABanner
-        title="Ready to simplify your tour business?"
-        description="Join hundreds of tour operators who switched from spreadsheets to Tournetix. Start your free 14-day trial — no credit card required."
-      />
+      <CTABanner />
     </>
   );
 }

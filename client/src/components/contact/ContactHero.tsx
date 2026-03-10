@@ -18,11 +18,11 @@ export function ContactHero() {
               style={{ textWrap: "balance" } as React.CSSProperties}
               data-testid="text-contact-title"
             >
-              Let's talk about your{" "}
-              <span className="text-brand-500">tour business</span>
+              Let's get your operation{" "}
+              <span className="text-brand-500">running smoother</span>
             </h1>
             <p className="mt-6 text-lg text-zinc-500 leading-relaxed">
-              Whether you have a question, want a demo, or just want to say hello — we'd love to hear from you. We typically respond within a few hours.
+              Questions, demo requests, or just curious — we'd love to hear from you. Most replies within 2 hours.
             </p>
           </div>
         </AnimateOnScroll>

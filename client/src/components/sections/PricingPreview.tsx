@@ -61,8 +61,8 @@ export function PricingPreview() {
         <AnimateOnScroll>
           <SectionHeader
             badge="Pricing"
-            title="Simple pricing, no per-booking fees"
-            description="Unlike competitors who take 3-6% of every booking, Tournetix is a flat monthly fee. Your revenue stays yours."
+            title="Flat pricing. Your revenue stays yours."
+            description="Other platforms take 3–6% of every booking. Tournetix charges a flat monthly fee — whether you have 10 bookings or 10,000."
           />
         </AnimateOnScroll>
 

@@ -8,8 +8,8 @@ interface CTABannerProps {
 }
 
 export function CTABanner({
-  title = "Ready to simplify your tour business?",
-  description = "Join hundreds of tour operators who switched from spreadsheets to Tournetix. Start your free 14-day trial \u2014 no credit card required.",
+  title = "Ready to run your tour business from one dashboard?",
+  description = "Join 500+ tour operators who ditched spreadsheets for Tournetix. Start free \u2014 no credit card, no setup fees, no per-booking charges.",
 }: CTABannerProps) {
   return (
     <section className="py-24 lg:py-32" data-testid="section-cta-banner">

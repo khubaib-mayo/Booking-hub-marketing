@@ -16,7 +16,7 @@ export function LogoCloud() {
       <Container>
         <AnimateOnScroll>
           <p className="text-center text-sm font-medium text-zinc-400 mb-8">
-            Trusted by tour operators in 20+ countries
+            Powering tour operations in 20+ countries
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
             {trustedBy.map((name) => (

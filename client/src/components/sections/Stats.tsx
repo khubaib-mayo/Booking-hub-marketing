@@ -2,10 +2,10 @@ import { Container } from "@/components/marketing/ui/Container";
 import { AnimateOnScroll } from "@/components/marketing/shared/AnimateOnScroll";
 
 const stats = [
-  { value: "10,000+", label: "Bookings managed" },
+  { value: "10,000+", label: "Bookings processed" },
   { value: "500+", label: "Tour operators" },
-  { value: "20+", label: "Countries" },
-  { value: "99.9%", label: "Uptime" },
+  { value: "20+", label: "Countries served" },
+  { value: "0%", label: "Per-booking fees" },
 ];
 
 export function Stats() {

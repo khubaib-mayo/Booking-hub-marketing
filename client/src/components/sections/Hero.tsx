@@ -22,7 +22,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <SectionBadge><Sparkles className="w-3.5 h-3.5 mr-1.5" /> Now with AI-powered insights</SectionBadge>
+            <SectionBadge><Sparkles className="w-3.5 h-3.5 mr-1.5" /> Trusted by operators in 20+ countries</SectionBadge>
           </motion.div>
 
           <motion.h1
@@ -32,9 +32,9 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             data-testid="text-hero-title"
           >
-            The booking platform{" "}
+            The operating system for{" "}
             <span className="relative inline-block">
-              <span className="text-brand-500">built for tourism</span>
+              <span className="text-brand-500">tour operators</span>
               <svg
                 className="absolute -bottom-2 left-0 w-full"
                 viewBox="0 0 300 12"
@@ -58,8 +58,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             data-testid="text-hero-subtitle"
           >
-            Manage bookings, track commissions, generate invoices, and grow your
-            tour business — all in one place.
+            Bookings, commissions, invoices, analytics, and team management — all from one dashboard. So you can focus on your guests, not your admin.
           </motion.p>
 
           <motion.div

@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Tournetix",
-  description: "The all-in-one booking platform built for tourism businesses.",
+  description: "The operating system for tour operators.",
   url: "https://tournetix.com",
   loginUrl: "https://app.tournetix.com/login",
   signupUrl: "https://app.tournetix.com/signup",

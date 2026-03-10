@@ -31,8 +31,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-zinc-500 leading-relaxed max-w-xs">
-              The all-in-one booking platform built for tourism businesses.
-              Manage bookings, track commissions, and grow your business.
+              The operating system for tour operators. Bookings, commissions, invoices, analytics, and team management — from one dashboard.
             </p>
           </div>
 

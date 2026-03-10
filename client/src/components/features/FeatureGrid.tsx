@@ -70,8 +70,8 @@ export function FeatureGrid() {
         <AnimateOnScroll>
           <SectionHeader
             badge="Platform Overview"
-            title="A complete toolkit, not just a booking form"
-            description="Every feature is designed to save you time and give you clarity on your business."
+            title="Eight systems. One login."
+            description="Booking management, commission tracking, invoicing, analytics, email automation, form builder, team roles, and AI insights — all built in."
           />
         </AnimateOnScroll>
 

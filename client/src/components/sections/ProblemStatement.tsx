@@ -33,8 +33,8 @@ export function ProblemStatement() {
         <AnimateOnScroll>
           <SectionHeader
             badge="The Problem"
-            title="Running a tour business shouldn't mean drowning in admin"
-            description="Tour operators spend 40% of their time on operations that should be automated. Sound familiar?"
+            title="You didn't start a tour company to do paperwork"
+            description="Spreadsheets for bookings. Calculators for commissions. Word docs for invoices. You're running 5 tools to do one job."
           />
         </AnimateOnScroll>
 
