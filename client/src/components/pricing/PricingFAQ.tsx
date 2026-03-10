@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Do you really not charge per booking?",
-    answer: "Really. Unlike FareHarbor (3-6% per booking) or Peek Pro (commission-based), BookingHub is a flat monthly fee. Whether you have 1 booking or 500, the price is the same. We believe your revenue should stay yours.",
+    answer: "Really. Unlike FareHarbor (3-6% per booking) or Peek Pro (commission-based), Tournetix is a flat monthly fee. Whether you have 1 booking or 500, the price is the same. We believe your revenue should stay yours.",
   },
   {
     question: "What's included in the 14-day free trial?",
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     question: "Can I get a refund if I'm not satisfied?",
-    answer: "If you're not happy within the first 30 days of a paid plan, we'll refund you in full. No questions asked. We're confident you'll love BookingHub.",
+    answer: "If you're not happy within the first 30 days of a paid plan, we'll refund you in full. No questions asked. We're confident you'll love Tournetix.",
   },
 ];
 

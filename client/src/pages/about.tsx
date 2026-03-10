@@ -23,7 +23,7 @@ export default function About() {
 
       <CTABanner
         title="Want to see what we've built?"
-        description="Take BookingHub for a spin. 14-day free trial, no credit card required."
+        description="Take Tournetix for a spin. 14-day free trial, no credit card required."
       />
     </>
   );

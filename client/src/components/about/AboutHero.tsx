@@ -22,7 +22,7 @@ export function AboutHero() {
               <span className="text-brand-500">wished existed</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-zinc-500 leading-relaxed max-w-2xl mx-auto">
-              BookingHub started with a simple frustration: why is running a tour business
+              Tournetix started with a simple frustration: why is running a tour business
               still so manual? We set out to change that.
             </p>
           </div>

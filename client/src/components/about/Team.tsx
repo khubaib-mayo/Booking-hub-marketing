@@ -7,7 +7,7 @@ const team = [
   {
     name: "Usman",
     role: "Founder & CEO",
-    bio: "Built BookingHub from the ground up after seeing firsthand how tour operators struggle with manual operations. Passionate about creating tools that let small businesses compete with the big players.",
+    bio: "Built Tournetix from the ground up after seeing firsthand how tour operators struggle with manual operations. Passionate about creating tools that let small businesses compete with the big players.",
     initials: "U",
     links: {
       linkedin: "#",
@@ -24,7 +24,7 @@ export function Team() {
         <AnimateOnScroll>
           <SectionHeader
             badge="Our Team"
-            title="The people behind BookingHub"
+            title="The people behind Tournetix"
             description="We're a small, focused team that moves fast and ships every week."
           />
         </AnimateOnScroll>

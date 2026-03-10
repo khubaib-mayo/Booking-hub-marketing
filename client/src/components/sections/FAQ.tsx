@@ -9,11 +9,11 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
   {
     question: "Is there a free trial?",
-    answer: "Yes! Every plan comes with a 14-day free trial. No credit card required. You get full access to all features during the trial so you can see exactly how BookingHub fits your business.",
+    answer: "Yes! Every plan comes with a 14-day free trial. No credit card required. You get full access to all features during the trial so you can see exactly how Tournetix fits your business.",
   },
   {
     question: "Do you charge per booking?",
-    answer: "No. Unlike FareHarbor and Peek (which take 3-6% per booking), BookingHub is a flat monthly subscription. Whether you have 10 bookings or 10,000, the price stays the same. Your revenue stays yours.",
+    answer: "No. Unlike FareHarbor and Peek (which take 3-6% per booking), Tournetix is a flat monthly subscription. Whether you have 10 bookings or 10,000, the price stays the same. Your revenue stays yours.",
   },
   {
     question: "Can I import my existing bookings?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "Do you support multiple currencies?",
-    answer: "Yes. BookingHub supports all major currencies. You set your preferred currency in company settings, and all amounts display accordingly throughout the platform.",
+    answer: "Yes. Tournetix supports all major currencies. You set your preferred currency in company settings, and all amounts display accordingly throughout the platform.",
   },
   {
     question: "Can I customize the invoice design?",
@@ -51,7 +51,7 @@ export function FAQ() {
           <SectionHeader
             badge="FAQ"
             title="Frequently asked questions"
-            description="Everything you need to know about BookingHub. Can't find what you're looking for? Contact us."
+            description="Everything you need to know about Tournetix. Can't find what you're looking for? Contact us."
           />
         </AnimateOnScroll>
 

@@ -93,7 +93,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <MockupFrame url="app.bookinghub.com/dashboard">
+          <MockupFrame url="app.tournetix.com/dashboard">
             <DashboardMockup />
           </MockupFrame>
         </motion.div>

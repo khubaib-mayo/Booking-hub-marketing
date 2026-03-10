@@ -8,7 +8,7 @@ const values = [
     icon: Eye,
     title: "Clarity over complexity",
     description:
-      "Tour operators don't have time to learn complicated software. Every screen, every button, every workflow in BookingHub is designed to be immediately obvious. If it needs a tutorial, we redesign it.",
+      "Tour operators don't have time to learn complicated software. Every screen, every button, every workflow in Tournetix is designed to be immediately obvious. If it needs a tutorial, we redesign it.",
   },
   {
     icon: Zap,
@@ -38,7 +38,7 @@ export function Values() {
           <SectionHeader
             badge="Our Values"
             title="What we believe"
-            description="These aren't wall posters. They're the decisions we make every day when building BookingHub."
+            description="These aren't wall posters. They're the decisions we make every day when building Tournetix."
           />
         </AnimateOnScroll>
 

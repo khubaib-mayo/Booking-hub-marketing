@@ -62,7 +62,7 @@ export function PricingPreview() {
           <SectionHeader
             badge="Pricing"
             title="Simple pricing, no per-booking fees"
-            description="Unlike competitors who take 3-6% of every booking, BookingHub is a flat monthly fee. Your revenue stays yours."
+            description="Unlike competitors who take 3-6% of every booking, Tournetix is a flat monthly fee. Your revenue stays yours."
           />
         </AnimateOnScroll>
 

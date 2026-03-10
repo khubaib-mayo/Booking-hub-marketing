@@ -27,7 +27,7 @@ export function OurStory() {
               </p>
 
               <p className="text-zinc-900 font-medium">
-                So we built BookingHub — the platform we wished existed when we were
+                So we built Tournetix — the platform we wished existed when we were
                 running a tour operation ourselves.
               </p>
 
@@ -53,10 +53,10 @@ export function OurStory() {
             <div className="mt-10 pt-8 border-t border-zinc-200">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0">
-                  <span className="text-base font-bold text-brand-600">BH</span>
+                  <span className="text-base font-bold text-brand-600">TX</span>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-zinc-900">The BookingHub Team</p>
+                  <p className="text-sm font-semibold text-zinc-900">The Tournetix Team</p>
                   <p className="text-xs text-zinc-400">Founded 2025 · Building from Portugal</p>
                 </div>
               </div>

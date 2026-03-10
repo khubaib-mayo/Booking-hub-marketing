@@ -21,7 +21,7 @@ const features = [
       "Search and filter by date, agent, status",
     ],
     icon: CalendarCheck,
-    mockupUrl: "app.bookinghub.com/bookings",
+    mockupUrl: "app.tournetix.com/bookings",
     mockup: BookingsMockup,
   },
   {
@@ -35,7 +35,7 @@ const features = [
       "Per-agent performance breakdowns",
     ],
     icon: Users,
-    mockupUrl: "app.bookinghub.com/commissions",
+    mockupUrl: "app.tournetix.com/commissions",
     mockup: CommissionsMockup,
   },
   {
@@ -49,7 +49,7 @@ const features = [
       "Payment status tracking",
     ],
     icon: FileText,
-    mockupUrl: "app.bookinghub.com/invoices",
+    mockupUrl: "app.tournetix.com/invoices",
     mockup: InvoiceMockup,
   },
   {
@@ -63,7 +63,7 @@ const features = [
       "AI-generated smart business insights",
     ],
     icon: TrendingUp,
-    mockupUrl: "app.bookinghub.com/analytics",
+    mockupUrl: "app.tournetix.com/analytics",
     mockup: FinancialMockup,
   },
 ];
@@ -76,7 +76,7 @@ export function FeatureShowcase() {
           <SectionHeader
             badge="Features"
             title="Everything you need, nothing you don't"
-            description="BookingHub replaces your spreadsheets, calculators, invoice templates, and email chains with one intelligent platform."
+            description="Tournetix replaces your spreadsheets, calculators, invoice templates, and email chains with one intelligent platform."
           />
         </AnimateOnScroll>
 

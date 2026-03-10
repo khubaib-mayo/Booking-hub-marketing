@@ -24,7 +24,7 @@ export function DemoBooking() {
               Prefer a live walkthrough?
             </h2>
             <p className="mt-3 text-base text-zinc-500 max-w-md mx-auto">
-              Book a free 15-minute demo and we'll show you exactly how BookingHub
+              Book a free 15-minute demo and we'll show you exactly how Tournetix
               works for your type of tour business.
             </p>
 
@@ -38,15 +38,15 @@ export function DemoBooking() {
             </div>
 
             <div className="mt-8">
-              <MarketingButton variant="primary" size="lg" href="mailto:hello@bookinghub.app?subject=Demo%20Request" data-testid="button-book-demo">
+              <MarketingButton variant="primary" size="lg" href="mailto:hello@tournetix.com?subject=Demo%20Request" data-testid="button-book-demo">
                 Book a Demo
               </MarketingButton>
             </div>
 
             <p className="mt-4 text-xs text-zinc-400">
               Or email us at{" "}
-              <a href="mailto:hello@bookinghub.app" className="text-brand-600 hover:text-brand-700 font-medium">
-                hello@bookinghub.app
+              <a href="mailto:hello@tournetix.com" className="text-brand-600 hover:text-brand-700 font-medium">
+                hello@tournetix.com
               </a>
             </p>
           </div>

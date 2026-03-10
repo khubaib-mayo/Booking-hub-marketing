@@ -19,7 +19,7 @@ export default function Features() {
       <FeatureDeepDive
         badge="Booking Management"
         title="Every booking, one place, total control"
-        description="Stop chasing bookings across WhatsApp, email, and spreadsheets. BookingHub gives you a single source of truth with powerful search, filters, and bulk actions."
+        description="Stop chasing bookings across WhatsApp, email, and spreadsheets. Tournetix gives you a single source of truth with powerful search, filters, and bulk actions."
         bullets={[
           "Create bookings with an intuitive multi-step form",
           "Track status: Upcoming, Completed, Cancelled",
@@ -35,16 +35,16 @@ export default function Features() {
           { title: "Deposit Tracking", description: "Record partial payments and track remaining balances. See at a glance what's still owed." },
           { title: "Mobile Friendly", description: "Create and manage bookings from any device. The responsive design works on phones and tablets." },
         ]}
-        mockupUrl="app.bookinghub.com/bookings"
+        mockupUrl="app.tournetix.com/bookings"
         mockupContent={<BookingsMockup />}
-        imageAlt="BookingHub Booking Management"
+        imageAlt="Tournetix Booking Management"
         icon={CalendarCheck}
       />
 
       <FeatureDeepDive
         badge="Commission Tracking"
         title="Pay your agents right, without the spreadsheet"
-        description="Commissions are the #1 pain point for tour operators with teams. BookingHub automates the entire process — from calculation to payout."
+        description="Commissions are the #1 pain point for tour operators with teams. Tournetix automates the entire process — from calculation to payout."
         bullets={[
           "Auto-calculated when bookings are created",
           "Configurable commission percentage per agent or globally",
@@ -60,9 +60,9 @@ export default function Features() {
           { title: "Performance Insights", description: "See which agents bring the most revenue, highest booking counts, and best conversion rates." },
           { title: "Export Reports", description: "Download commission reports as CSV or PDF for your accountant or payroll system." },
         ]}
-        mockupUrl="app.bookinghub.com/commissions"
+        mockupUrl="app.tournetix.com/commissions"
         mockupContent={<CommissionsMockup />}
-        imageAlt="BookingHub Commission Tracking"
+        imageAlt="Tournetix Commission Tracking"
         icon={Users}
         reversed
         bgClass="bg-zinc-50/50"
@@ -71,7 +71,7 @@ export default function Features() {
       <FeatureDeepDive
         badge="Invoicing"
         title="Professional invoices without the copy-paste"
-        description="Stop creating invoices one by one in Word. BookingHub generates beautiful, professional PDF invoices from your booking data — and emails them to customers directly."
+        description="Stop creating invoices one by one in Word. Tournetix generates beautiful, professional PDF invoices from your booking data — and emails them to customers directly."
         bullets={[
           "One-click invoice generation from any booking",
           "Automatic line items, tax calculations, and totals",
@@ -82,14 +82,14 @@ export default function Features() {
         details={[
           { title: "PDF Generation", description: "Clean, professional invoices generated as PDF. Download or email them instantly." },
           { title: "Auto-Fill from Bookings", description: "Customer details, trip info, pricing, and tax all pull from the booking. Zero manual entry." },
-          { title: "Tax Configuration", description: "Set your tax rate in settings. BookingHub calculates tax automatically on every invoice." },
+          { title: "Tax Configuration", description: "Set your tax rate in settings. Tournetix calculates tax automatically on every invoice." },
           { title: "Email Delivery", description: "Send invoices directly from the platform. Track whether they've been sent and when." },
           { title: "Payment Tracking", description: "Mark invoices as paid when payment arrives. See outstanding amounts at a glance." },
           { title: "Invoice History", description: "Full list of all invoices with search, filter by status, and quick actions." },
         ]}
-        mockupUrl="app.bookinghub.com/invoices"
+        mockupUrl="app.tournetix.com/invoices"
         mockupContent={<InvoiceMockup />}
-        imageAlt="BookingHub Invoice Generation"
+        imageAlt="Tournetix Invoice Generation"
         icon={FileText}
       />
 
@@ -112,9 +112,9 @@ export default function Features() {
           { title: "AI Smart Insights", description: "AI analyzes your data and surfaces actionable recommendations — like which tours to promote." },
           { title: "Export Everything", description: "Download financial reports as PDF or CSV. Ready for your accountant or tax filing." },
         ]}
-        mockupUrl="app.bookinghub.com/analytics"
+        mockupUrl="app.tournetix.com/analytics"
         mockupContent={<FinancialMockup />}
-        imageAlt="BookingHub Financial Analytics"
+        imageAlt="Tournetix Financial Analytics"
         icon={TrendingUp}
         reversed
         bgClass="bg-zinc-50/50"

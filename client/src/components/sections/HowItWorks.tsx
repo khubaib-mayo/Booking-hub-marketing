@@ -32,7 +32,7 @@ export function HowItWorks() {
           <SectionHeader
             badge="How It Works"
             title="From signup to insights in three steps"
-            description="BookingHub gets you up and running fast — not in weeks, in minutes."
+            description="Tournetix gets you up and running fast — not in weeks, in minutes."
           />
         </AnimateOnScroll>
 

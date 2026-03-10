@@ -1,8 +1,8 @@
-# BookingHub Marketing Website
+# Tournetix Marketing Website
 
 ## Overview
 
-BookingHub is a marketing website for a SaaS booking platform built for tourism businesses. It's a multi-page marketing site with pages for Home, Features, Pricing, About, and Contact. The project uses a full-stack architecture with a React frontend (Vite) and Express backend, though the backend currently serves primarily as a static file server with minimal API usage. The site showcases product features like booking management, commission tracking, invoice generation, and customer management.
+Tournetix is a marketing website for a SaaS booking platform built for tourism businesses. It's a multi-page marketing site with pages for Home, Features, Pricing, About, and Contact. The project uses a full-stack architecture with a React frontend (Vite) and Express backend, though the backend currently serves primarily as a static file server with minimal API usage. The site showcases product features like booking management, commission tracking, invoice generation, and customer management.
 
 ## User Preferences
 
@@ -68,4 +68,4 @@ Preferred communication style: Simple, everyday language.
 - `@replit/vite-plugin-dev-banner` — Dev banner (dev only)
 
 ### External Links (not integrations)
-- Login/Signup URLs point to `app.bookinghub.app` subdomain (configured in `client/src/lib/constants.ts`)
+- Login/Signup URLs point to `app.tournetix.com` subdomain (configured in `client/src/lib/constants.ts`)

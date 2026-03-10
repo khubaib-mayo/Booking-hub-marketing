@@ -10,7 +10,7 @@ const integrations = [
   { icon: Globe, name: "Booking Widget", status: "Coming Q3 2026", description: "Embed a booking form on your own website" },
   { icon: Mail, name: "Mailchimp", status: "Coming Q3 2026", description: "Sync customers to your email marketing lists" },
   { icon: Smartphone, name: "Mobile App", status: "Coming Q2 2026", description: "Manage bookings on the go with iOS and Android" },
-  { icon: Plug, name: "Zapier", status: "Coming Q4 2026", description: "Connect BookingHub to 5,000+ other apps" },
+  { icon: Plug, name: "Zapier", status: "Coming Q4 2026", description: "Connect Tournetix to 5,000+ other apps" },
 ];
 
 export function IntegrationPreview() {

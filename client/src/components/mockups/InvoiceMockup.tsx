@@ -26,9 +26,9 @@ export function InvoiceMockup() {
           <div>
             <div className="flex items-center gap-2 mb-1">
               <div className="w-6 h-6 rounded-md bg-brand-500 flex items-center justify-center">
-                <span className="text-[9px] font-bold text-white">BH</span>
+                <span className="text-[9px] font-bold text-white">TX</span>
               </div>
-              <span className="text-sm font-bold text-zinc-800">BookingHub</span>
+              <span className="text-sm font-bold text-zinc-800">Tournetix</span>
             </div>
             <p className="text-[10px] text-zinc-400 leading-relaxed">
               Ocean Adventures Ltd.<br />

@@ -9,7 +9,7 @@ interface MockupFrameProps {
 
 export function MockupFrame({
   type = "browser",
-  url = "app.bookinghub.com/dashboard",
+  url = "app.tournetix.com/dashboard",
   children,
   className,
 }: MockupFrameProps) {

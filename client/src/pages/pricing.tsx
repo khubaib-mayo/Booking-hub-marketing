@@ -23,7 +23,7 @@ export default function Pricing() {
 
       <CTABanner
         title="Start your free trial today"
-        description="14 days. All features. No credit card. See why hundreds of tour operators chose BookingHub."
+        description="14 days. All features. No credit card. See why hundreds of tour operators chose Tournetix."
       />
     </>
   );

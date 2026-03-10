@@ -5,7 +5,7 @@ const infoCards = [
   {
     icon: Mail,
     title: "Email us",
-    detail: "hello@bookinghub.app",
+    detail: "hello@tournetix.com",
     subtitle: "For general inquiries",
   },
   {
@@ -29,9 +29,9 @@ const infoCards = [
 ];
 
 const socialLinks = [
-  { name: "Twitter / X", href: "#", label: "@bookinghub" },
-  { name: "LinkedIn", href: "#", label: "BookingHub" },
-  { name: "Instagram", href: "#", label: "@bookinghub" },
+  { name: "Twitter / X", href: "#", label: "@tournetix" },
+  { name: "LinkedIn", href: "#", label: "Tournetix" },
+  { name: "Instagram", href: "#", label: "@tournetix" },
 ];
 
 export function ContactInfo() {

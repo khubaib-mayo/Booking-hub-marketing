@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "We switched from FareHarbor and saved $500/month in commission fees alone. BookingHub pays for itself 10x over.",
+    quote: "We switched from FareHarbor and saved $500/month in commission fees alone. Tournetix pays for itself 10x over.",
     author: "Maria Costa",
     role: "Owner, Ocean Tours",
     location: "Lisbon, Portugal",

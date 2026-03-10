@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "BookingHub",
+  name: "Tournetix",
   description: "The all-in-one booking platform built for tourism businesses.",
-  url: "https://bookinghub.app",
-  loginUrl: "https://app.bookinghub.app/login",
-  signupUrl: "https://app.bookinghub.app/signup",
+  url: "https://tournetix.com",
+  loginUrl: "https://app.tournetix.com/login",
+  signupUrl: "https://app.tournetix.com/signup",
 };
 
 export const navItems = [

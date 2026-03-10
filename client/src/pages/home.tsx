@@ -23,7 +23,7 @@ export default function Home() {
       <FAQ />
       <CTABanner
         title="Ready to simplify your tour business?"
-        description="Join hundreds of tour operators who switched from spreadsheets to BookingHub. Start your free 14-day trial — no credit card required."
+        description="Join hundreds of tour operators who switched from spreadsheets to Tournetix. Start your free 14-day trial — no credit card required."
       />
     </>
   );
