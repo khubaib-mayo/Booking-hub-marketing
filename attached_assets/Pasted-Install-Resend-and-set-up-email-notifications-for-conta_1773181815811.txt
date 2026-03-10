@@ -1,0 +1,43 @@
+Install Resend and set up email notifications for contact form submissions.
+
+Run npm install resend
+I've already added RESEND_API_KEY to the environment variables.
+Update the contact form handler in server/routes.ts — after saving to the JSON file, send an email notification using Resend:
+
+typescriptimport { Resend } from 'resend';
+const resend = new Resend(process.env.RESEND_API_KEY);
+After the JSON save, add:
+typescripttry {
+  await resend.emails.send({
+    from: "Tournetix Website <noreply@app.tournetix.com>",
+    to: "support@tournetix.com",
+    replyTo: body.email,
+    subject: `New Inquiry: ${body.subject || "General"} from ${body.name}`,
+    html: `
+      <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
+        <div style="background: #18181B; padding: 20px 24px; border-radius: 8px 8px 0 0;">
+          <h1 style="color: #F59E0B; font-size: 18px; margin: 0;">New Contact Form Submission</h1>
+        </div>
+        <div style="border: 1px solid #E4E4E7; border-top: none; padding: 24px; border-radius: 0 0 8px 8px;">
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr><td style="padding: 8px 0; color: #71717A; width: 120px;">Name</td><td style="padding: 8px 0; font-weight: 600;">${body.name}</td></tr>
+            <tr><td style="padding: 8px 0; color: #71717A;">Email</td><td style="padding: 8px 0;"><a href="mailto:${body.email}" style="color: #F59E0B;">${body.email}</a></td></tr>
+            <tr><td style="padding: 8px 0; color: #71717A;">Company</td><td style="padding: 8px 0;">${body.company || "Not specified"}</td></tr>
+            <tr><td style="padding: 8px 0; color: #71717A;">Monthly Tours</td><td style="padding: 8px 0;">${body.tourCount || "Not specified"}</td></tr>
+            <tr><td style="padding: 8px 0; color: #71717A;">Subject</td><td style="padding: 8px 0;">${body.subject || "General Inquiry"}</td></tr>
+          </table>
+          <hr style="border: none; border-top: 1px solid #E4E4E7; margin: 16px 0;" />
+          <p style="color: #71717A; font-size: 13px; margin: 0 0 8px;">Message:</p>
+          <p style="margin: 0; line-height: 1.6;">${body.message}</p>
+          <hr style="border: none; border-top: 1px solid #E4E4E7; margin: 16px 0;" />
+          <p style="color: #A1A1AA; font-size: 11px; margin: 0;">Sent from tournetix.com contact form · ${new Date().toLocaleString()}</p>
+        </div>
+      </div>
+    `,
+  });
+} catch (err) {
+  console.error("Email notification failed:", err);
+}
+
+Keep the JSON file backup — both should run on every submission. If the email fails, the form should still return success (don't let email failure break the user experience).
+The replyTo: body.email is important — when I hit "Reply" in my inbox, it goes directly to the person who submitted the form, not to noreply@.
