@@ -38,15 +38,15 @@ export function DemoBooking() {
             </div>
 
             <div className="mt-8">
-              <MarketingButton variant="primary" size="lg" href="mailto:hello@tournetix.com?subject=Demo%20Request" data-testid="button-book-demo">
+              <MarketingButton variant="primary" size="lg" href="mailto:support@tournetix.com?subject=Demo%20Request" data-testid="button-book-demo">
                 Book a Demo
               </MarketingButton>
             </div>
 
             <p className="mt-4 text-xs text-zinc-400">
               Or email us at{" "}
-              <a href="mailto:hello@tournetix.com" className="text-brand-600 hover:text-brand-700 font-medium">
-                hello@tournetix.com
+              <a href="mailto:support@tournetix.com" className="text-brand-600 hover:text-brand-700 font-medium">
+                support@tournetix.com
               </a>
             </p>
           </div>

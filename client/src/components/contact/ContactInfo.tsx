@@ -5,7 +5,7 @@ const infoCards = [
   {
     icon: Mail,
     title: "Email us",
-    detail: "hello@tournetix.com",
+    detail: "support@tournetix.com",
     subtitle: "For general inquiries",
   },
   {
