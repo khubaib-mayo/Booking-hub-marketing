@@ -11,7 +11,7 @@ const plans = [
   {
     name: "Solo",
     description: "For individual operators",
-    price: "$29",
+    price: "$19",
     period: "/month",
     features: [
       "1 user",
@@ -25,7 +25,7 @@ const plans = [
   {
     name: "Team",
     description: "For growing tour companies",
-    price: "$79",
+    price: "$39",
     period: "/month",
     features: [
       "Up to 10 users",
@@ -40,7 +40,7 @@ const plans = [
   {
     name: "Business",
     description: "For larger operations",
-    price: "$149",
+    price: "$79",
     period: "/month",
     features: [
       "Up to 50 users",

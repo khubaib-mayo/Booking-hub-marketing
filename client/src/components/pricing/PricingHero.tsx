@@ -54,7 +54,7 @@ export function PricingHero({ isAnnual, onToggle }: PricingHeroProps) {
               >
                 Annual
                 <span className="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-700">
-                  SAVE 20%
+                  SAVE 50%
                 </span>
               </button>
             </div>

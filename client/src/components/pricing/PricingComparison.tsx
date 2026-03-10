@@ -127,7 +127,7 @@ export function PricingComparison() {
                 <div />
                 <div className="text-center">
                   <p className="text-sm font-semibold text-zinc-900">Solo</p>
-                  <p className="text-xs text-zinc-400">$14/mo</p>
+                  <p className="text-xs text-zinc-400">$19/mo</p>
                 </div>
                 <div className="text-center">
                   <div className="inline-flex flex-col items-center">
@@ -135,12 +135,12 @@ export function PricingComparison() {
                       POPULAR
                     </span>
                     <p className="text-sm font-semibold text-zinc-900">Team</p>
-                    <p className="text-xs text-zinc-400">$29/mo</p>
+                    <p className="text-xs text-zinc-400">$39/mo</p>
                   </div>
                 </div>
                 <div className="text-center">
                   <p className="text-sm font-semibold text-zinc-900">Enterprise</p>
-                  <p className="text-xs text-zinc-400">$49/mo</p>
+                  <p className="text-xs text-zinc-400">$79/mo</p>
                 </div>
               </div>
 
